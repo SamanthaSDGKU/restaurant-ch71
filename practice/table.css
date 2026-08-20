@@ -66,10 +66,14 @@ th{
 /*zebra striping*/
 .styledTable tbody tr:nth-child(even){
     background-color: var(--row-alt);
+    
 }
 
 .styledTable tbody tr:hover{
     background-color:var(--row-hover);
     color: var(--text-light);
     cursor: pointer;
+}
+.styledTable td{
+    text-align: center;
 }
