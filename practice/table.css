@@ -1,0 +1,75 @@
+:root{
+    --accent-color:#f87171;
+    --text-light:#ffffff;
+    --header-bg:#3b0563;
+    --primary-color:rgb(9, 75, 95);
+    --row-alt:#d3faff;
+    --row-hover:#00789d;
+}
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: arial;
+    background-color: #fafafa;
+}
+h1{
+    margin-bottom: 20px;
+}
+h2{
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+p{
+    margin-bottom: 12px;
+    font-size: 12px;
+}
+
+/*Table basic style - ALL tables */
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+}
+th,td{
+    border:1px solid black;
+    text-align: left;
+    font-size: 14px;
+    padding:10px
+}
+th{
+    background-color: var(--accent-color);
+    color: var(--text-light);
+}
+
+/* Schedule table */
+
+.scheduleTable th{
+    background-color: var(--header-bg);
+    text-align: center;
+}
+.scheduleTable td{
+    text-align: center;
+}
+
+/*styled table*/
+
+.styledTable th{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+/*zebra striping*/
+.styledTable tbody tr:nth-child(even){
+    background-color: var(--row-alt);
+}
+
+.styledTable tbody tr:hover{
+    background-color:var(--row-hover);
+    color: var(--text-light);
+    cursor: pointer;
+}
